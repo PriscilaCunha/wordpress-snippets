@@ -1,3 +1,5 @@
+?php
+
 /* Makes JetPack add duplicate option for custom posts - functions.php */
 /* Faz JetPack adicionar opção de duplicar para posts personalizados - functions.php */
 function jetpack_add_copy_support( $post_types ) {
