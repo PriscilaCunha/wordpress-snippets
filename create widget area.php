@@ -1,5 +1,4 @@
 <?php 
-
 /* Register sidebars and widgetized areas - functions.php */
 /* Registrar barra lateral e área de widgets - functions.php */
 function custom_widgets_init() {
@@ -17,10 +16,9 @@ function custom_widgets_init() {
 }
 add_action( 'widgets_init', custom_widgets_init );
 
-?>
 
 /* Display sidebars and widgetized areas - header.php, footer.php */
 /* Exibir barra lateral e área de widgets - header.php, footer.php */
-<?php if ( is_active_sidebar( 'widget_id' ) ) : ?>
-    <div id="widget-id" class="widget-area"><?php dynamic_sidebar( 'widget_id' ); ?></div><!-- #widget-id -->
-<?php endif; ?>
+if ( is_active_sidebar( 'widget_id' ) ) :
+    echo '<div id="widget-id" class="widget-area">'.dynamic_sidebar( 'widget_id' ).'</div><!-- #widget-id -->';
+endif;
