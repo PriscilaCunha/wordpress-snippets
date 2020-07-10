@@ -22,8 +22,8 @@ function my_parent_theme_function() {
     // New Code
 }
 ```
-_note: do not change original function name._  
-_nota: não mudar o nome da função original _  
+_note: do not change original function name.  
+nota: não mudar o nome da função original._  
   
 ---  
   
