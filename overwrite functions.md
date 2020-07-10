@@ -1,7 +1,7 @@
 Overwrite functions from parent themes or plugins / Sobrescrever funções de temas pai ou plugins
 -----
 
-1. Pluggable functions / Funções conectáveis  
+**1. Pluggable functions / Funções conectáveis**
 
 If the original function is similar to:  
 Se a função original for similar a:  
@@ -25,7 +25,7 @@ nota: não mudar o nome da função original._
   
 ---  
   
-2. Specify higher priority / Especificar prioridade maior  
+**2. Specify higher priority / Especificar prioridade maior**
 
 ```php
 function my_child_theme_function() {
@@ -36,7 +36,7 @@ add_action('after_setup_theme', 'my_child_theme_function', 20);
   
 ---  
   
-3. Use hooks, actions and filters / Use ganchos, ações e filtros  
+**3. Use hooks, actions and filters / Use ganchos, ações e filtros**
 
 Original function:  
 Função original:  
@@ -57,4 +57,4 @@ add_action('wp_loaded', 'remove_my_parent_theme_function');
 ```
   
   
-// Source: / Fonte: https://mhthemes.com/support/knb/overriding-parent-theme-functions-child-theme-tutorial/
+_Source: / Fonte: https://mhthemes.com/support/knb/overriding-parent-theme-functions-child-theme-tutorial/_
