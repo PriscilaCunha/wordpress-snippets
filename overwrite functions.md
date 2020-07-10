@@ -1,6 +1,4 @@
-Overwrite functions from parent themes or plugins
------
-Sobrescrever funções de temas pai ou plugins
+Overwrite functions from parent themes or plugins / Sobrescrever funções de temas pai ou plugins
 -----
 
 1. Pluggable functions / Funções conectáveis  
@@ -28,6 +26,7 @@ nota: não mudar o nome da função original._
 ---  
   
 2. Specify higher priority / Especificar prioridade maior  
+
 ```php
 function my_child_theme_function() {
     // Code of your child theme function
@@ -38,6 +37,7 @@ add_action('after_setup_theme', 'my_child_theme_function', 20);
 ---  
   
 3. Use hooks, actions and filters / Use ganchos, ações e filtros  
+
 Original function:  
 Função original:  
 ```php
