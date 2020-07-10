@@ -3,7 +3,7 @@ Overwrite functions from parent themes or plugins
 Sobrescrever funções de temas pai ou plugins
 -----
 
-1. Pluggable functions / Funções conectáveis 
+1. Pluggable functions / Funções conectáveis  
 If the original function is similar to:
 Se a função original for similar a:
 `<?php
