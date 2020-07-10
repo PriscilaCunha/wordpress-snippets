@@ -4,23 +4,24 @@ Sobrescrever funções de temas pai ou plugins
 -----
 
 1. Pluggable functions / Funções conectáveis  
+
 If the original function is similar to:  
 Se a função original for similar a:  
-`<?php  
+```php
 if (!function_exists('my_parent_theme_function')) {  
     function my_parent_theme_function() {  
         // Code  
     }  
 }  
-?>` 
+```
 
 Add this in functions.php  
 Adicionar no functions.php  
-`<?php
+```php
 function my_parent_theme_function() {
     // New Code
 }
-?>`  
+```
 _note: do not change original function name._  
 _nota: não mudar o nome da função original _  
   
