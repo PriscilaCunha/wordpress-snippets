@@ -1,6 +1,7 @@
 <?php 
 /* Register sidebars and widget areas - functions.php */
 /* Registrar barra lateral e área de widgets - functions.php */
+add_action( 'widgets_init', custom_widgets_init );
 function custom_widgets_init() {
 
 	register_sidebar( array(
@@ -17,7 +18,6 @@ function custom_widgets_init() {
 	// Adicionar outras áreas de widgets
 
 }
-add_action( 'widgets_init', custom_widgets_init );
 
 
 /* Display sidebars and widget areas - header.php, footer.php */
