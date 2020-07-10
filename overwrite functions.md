@@ -28,10 +28,10 @@ nota: não mudar o nome da função original._
 **2. Specify higher priority / Especificar prioridade maior**
 
 ```php
+add_action('after_setup_theme', 'my_child_theme_function', 20);
 function my_child_theme_function() {
     // Code of your child theme function
 }
-add_action('after_setup_theme', 'my_child_theme_function', 20);
 ```
   
 ---  
@@ -41,19 +41,19 @@ add_action('after_setup_theme', 'my_child_theme_function', 20);
 Original function:  
 Função original:  
 ```php
+add_action('after_setup_theme', 'my_parent_theme_function');
 function my_parent_theme_function() {
     // Code of your parent theme function
 }
-add_action('after_setup_theme', 'my_parent_theme_function');
 ```
   
 To overwrite, you need to remove the action:  
 Para sobrescrever, é necessário remover a ação:  
 ```php
+add_action('wp_loaded', 'remove_my_parent_theme_function');
 function remove_my_parent_theme_function() {
     remove_action('after_setup_theme', 'my_parent_theme_function');
 }
-add_action('wp_loaded', 'remove_my_parent_theme_function');
 ```
   
   
